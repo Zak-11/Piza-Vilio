@@ -11,7 +11,9 @@ function App() {
             <div className="content">
                 <div className="container">
                     <div className="content__top">
-                        <Categories/>
+                        <Categories
+                            onClickItem={(name) => console.log(name)}
+                            items={['Мясные', 'Вегетарианские','Гриль','Острые','Закрытые']}/>
 
                         <div className="sort">
                             <div className="sort__label">
@@ -44,7 +46,7 @@ function App() {
                         <div className="pizza-block">
                             <img
                                 className="pizza-block__image"
-                                src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg"
+                                src="https://oop2.pizzahut.ru/product_pics/small//1/pizza_mushroom_new.jpg"
                                 alt="Pizza"
                             />
                             <h4 className="pizza-block__title">Чизбургер-пицца</h4>
@@ -82,7 +84,7 @@ function App() {
                         <div className="pizza-block">
                             <img
                                 className="pizza-block__image"
-                                src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg"
+                                src="https://oop2.pizzahut.ru/product_pics/small//1/pizza_margherita_new.jpg"
                                 alt="Pizza"
                             />
                             <h4 className="pizza-block__title">Чизбургер-пицца</h4>
@@ -120,7 +122,7 @@ function App() {
                         <div className="pizza-block">
                             <img
                                 className="pizza-block__image"
-                                src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg"
+                                src="https://oop2.pizzahut.ru/product_pics/small//3/418ad50e3979e8d9ad3403e6a464914c.png"
                                 alt="Pizza"
                             />
                             <h4 className="pizza-block__title">Чизбургер-пицца</h4>
@@ -158,7 +160,7 @@ function App() {
                         <div className="pizza-block">
                             <img
                                 className="pizza-block__image"
-                                src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg"
+                                src="https://oop2.pizzahut.ru/product_pics/small//2/70856dcea15dd0aab50c1243ecf9938a.png"
                                 alt="Pizza"
                             />
                             <h4 className="pizza-block__title">Чизбургер-пицца</h4>
@@ -196,7 +198,7 @@ function App() {
                         <div className="pizza-block">
                             <img
                                 className="pizza-block__image"
-                                src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg"
+                                src="https://oop2.pizzahut.ru/product_pics/small//1/pizza_chicken_bbq_new.jpg"
                                 alt="Pizza"
                             />
                             <h4 className="pizza-block__title">Чизбургер-пицца</h4>
@@ -234,7 +236,7 @@ function App() {
                         <div className="pizza-block">
                             <img
                                 className="pizza-block__image"
-                                src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg"
+                                src="https://oop2.pizzahut.ru/product_pics/small//1/a7d86028e431096a8adb2b364455dcce.png"
                                 alt="Pizza"
                             />
                             <h4 className="pizza-block__title">Чизбургер-пицца</h4>
@@ -272,7 +274,7 @@ function App() {
                         <div className="pizza-block">
                             <img
                                 className="pizza-block__image"
-                                src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg"
+                                src="https://oop2.pizzahut.ru/product_pics/small//3/ca626217c8499dc33d523a04fb83625f.png"
                                 alt="Pizza"
                             />
                             <h4 className="pizza-block__title">Чизбургер-пицца</h4>
@@ -310,7 +312,7 @@ function App() {
                         <div className="pizza-block">
                             <img
                                 className="pizza-block__image"
-                                src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg"
+                                src="https://oop2.pizzahut.ru/product_pics/small//3/fbd0b10ce3bcce36aa44104432dedb09.png"
                                 alt="Pizza"
                             />
                             <h4 className="pizza-block__title">Чизбургер-пицца</h4>
@@ -348,7 +350,7 @@ function App() {
                         <div className="pizza-block">
                             <img
                                 className="pizza-block__image"
-                                src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg"
+                                src="https://oop2.pizzahut.ru/product_pics/small//1/pizza_cheeseburger_new.jpg"
                                 alt="Pizza"
                             />
                             <h4 className="pizza-block__title">Чизбургер-пицца</h4>

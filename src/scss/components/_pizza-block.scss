@@ -1,7 +1,7 @@
 @import '../variables';
 
 .pizza-block {
-  width: 280px;
+  width: 350px;
   text-align: center;
   margin-bottom: 65px;
 
@@ -10,7 +10,7 @@
   }
 
   &__image {
-    width: 260px;
+    width: 100%;
   }
 
   &__title {
