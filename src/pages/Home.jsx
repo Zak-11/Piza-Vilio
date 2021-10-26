@@ -9,18 +9,21 @@ function Home ({items}) {
             <div className="content__top">
                 <Categories
                     items={['Meat', 'Vegetarian', 'Grilled', 'Sharp', 'Closed']}/>
-                <SortPopup items={['popularity', 'price', 'alphabet']}/>
+                <SortPopup
+                    items={[
+                        { name: 'популярности', type: 'popular' },
+                        { name: 'цене', type: 'price' },
+                        { name: 'алфавит', type: 'alphabet' },
+                    ]}
+                />
             </div>
-            <h2 className="content__title">All pizzas</h2>
+            <h2 className="content__title">Все пиццы</h2>
             <div className="content__items">
-                { items.map((obj) =>(
-                    <PizzaBlock key={obj.id} {...obj}/>
-                    )) }
-
-
+                {items.map((obj) => (
+                    <PizzaBlock key={obj.id} {...obj} />
+                ))}
             </div>
         </div>
     );
 }
-
 export default Home;
