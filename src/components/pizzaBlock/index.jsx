@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 
 
-function PizzaBlock ({name,imageUrl, price, types, sizes})  {
+function Index ({name,imageUrl, price, types, sizes})  {
     const availableTypes = ['тонкое', 'традиционное'];
     const availableSizes = [26, 30, 40];
 
@@ -75,7 +75,7 @@ function PizzaBlock ({name,imageUrl, price, types, sizes})  {
     );
 }
 
-PizzaBlock.propTypes = {
+Index.propTypes = {
     name: PropTypes.string,
     imageUrl: PropTypes.string,
     price: PropTypes.number,
@@ -83,7 +83,7 @@ PizzaBlock.propTypes = {
     sizes: PropTypes.arrayOf(PropTypes.number),
 };
 
-PizzaBlock.defaultProps = {
+Index.defaultProps = {
     name: '---',
     price: 0,
     types: [],
@@ -92,4 +92,4 @@ PizzaBlock.defaultProps = {
 
 
 
-export default PizzaBlock;
+export default Index;
