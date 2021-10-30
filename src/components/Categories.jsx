@@ -8,7 +8,7 @@ const Categories = React.memo(function Categories({ activeCategory, items, onCli
                 <li
                     className={activeCategory === null ? 'active' : ''}
                     onClick={() => onClickCategory(null)}>
-                    Все
+                    All
                 </li>
                 {items &&
                 items.map((name, index) => (
@@ -25,7 +25,7 @@ const Categories = React.memo(function Categories({ activeCategory, items, onCli
 });
 
 Categories.propTypes = {
-    // activeCategory: PropTypes.oneOf([PropTypes.number, null]),
+
     items: PropTypes.arrayOf(PropTypes.string).isRequired,
     onClickCategory: PropTypes.func.isRequired,
 };

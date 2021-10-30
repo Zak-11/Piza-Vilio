@@ -15,13 +15,13 @@ function Cart() {
     });
 
     const onClearCart = () => {
-        if (window.confirm('Вы действительно хотите очистить корзину?')) {
+        if (window.confirm('Do you really want to empty the trash?')) {
             dispatch(clearCart());
         }
     };
 
     const onRemoveItem = (id) => {
-        if (window.confirm('Вы действительно хотите удалить?')) {
+        if (window.confirm('Do you really want to delete?')) {
             dispatch(removeCartItem(id));
         }
     };
@@ -35,7 +35,7 @@ function Cart() {
     };
 
     const onClickOrder = () => {
-        console.log('ВАШ ЗАКАЗ', items);
+        console.log('YOUR ORDER', items);
     };
 
     return (
@@ -74,7 +74,7 @@ function Cart() {
                                         strokeLinejoin="round"
                                     />
                                 </svg>
-                                Корзина
+                                Basket
                             </h2>
                             <div className="cart__clear">
                                 <svg
@@ -112,7 +112,7 @@ function Cart() {
                                         strokeLinejoin="round"
                                     />
                                 </svg>
-                                <span onClick={onClearCart}>Очистить корзину</span>
+                                <span onClick={onClearCart}>Empty the trash</span>
                             </div>
                         </div>
 
@@ -135,10 +135,10 @@ function Cart() {
                         <div className="cart__bottom">
                             <div className="cart__bottom-details">
                 <span>
-                  Всего пицц: <b>{totalCount} шт.</b>
+                  Total pizzas: <b>{totalCount} pc.</b>
                 </span>
                                 <span>
-                  Сумма заказа: <b>{totalPrice} ₽</b>
+                 Order amount: <b>{totalPrice} $</b>
                 </span>
                             </div>
                             <div className="cart__bottom-buttons">
@@ -158,28 +158,29 @@ function Cart() {
                                     />
                                 </svg>
                                     <Link to="/">
-                                        <span>Вернуться назад</span>
+                                        <span>Go back</span>
                                     </Link>
                                 </a>
                                 <Button onClick={onClickOrder} className="pay-btn">
-                                    <span>Оплатить сейчас</span>
+                                    <span>Pay Now</span>
                                 </Button>
                             </div>
                         </div>
                     </div>
-                ) : (
+                ) :
+                    (
                     <div className="cart cart--empty">
                         <h2>
-                            Корзина пустая <i>😕</i>
+                            The basket is empty
                         </h2>
                         <p>
-                            Вероятней всего, вы не заказывали ещё пиццу.
+                            Most likely, you haven't ordered pizza yet.
                             <br />
-                            Для того, чтобы заказать пиццу, перейди на главную страницу.
+                            To order a pizza, go to the main page.
                         </p>
                         <img src={cartEmptyImage} alt="Empty cart" />
                         <Link to="/" className="button button--black">
-                            <span>Вернуться назад</span>
+                            <span>Go back</span>
                         </Link>
                     </div>
                 )}

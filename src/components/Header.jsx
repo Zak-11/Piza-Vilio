@@ -27,7 +27,7 @@ function Header() {
 
                     <Link to="/cart">
                         <Button className="button--cart">
-                            <span>{totalPrice} ₽</span>
+                            <span>{totalPrice} $</span>
                             <div className="button__delimiter">
 
                             </div>

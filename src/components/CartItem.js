@@ -26,7 +26,7 @@ const CartItem = ({ id, name, type, size, totalPrice, totalCount, onRemove, onMi
             <div className="cart__item-info">
                 <h3>{name}</h3>
                 <p>
-                    {type} тесто, {size} см.
+                    {type} dough, {size} cm.
                 </p>
             </div>
             <div className="cart__item-count">

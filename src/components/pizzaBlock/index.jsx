@@ -7,7 +7,7 @@ import Button from "../Button";
 
 function PizzaBlock({ id, name, imageUrl, price, types, sizes, onClickAddPizza, addedCount }) {
 
-    const availableTypes = ['тонкое', 'традиционное'];
+    const availableTypes = ['subtle', 'traditional'];
     const availableSizes = [26, 30, 40];
 
 
@@ -63,13 +63,13 @@ function PizzaBlock({ id, name, imageUrl, price, types, sizes, onClickAddPizza, 
                                 active: activeSize === index,
                                 disabled: !sizes.includes(size),
                             })}>
-                            {size} см.
+                            {size} cm.
                         </li>
                     ))}
                 </ul>
             </div>
             <div className="pizza-block__bottom">
-                <div className="pizza-block__price">от {price} ₽</div>
+                <div className="pizza-block__price">from {price} $</div>
                 <Button onClick={onAddPizza} className="button--add" outline>
                     <svg
                         width="12"

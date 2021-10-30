@@ -7,11 +7,11 @@ import { fetchPizzas } from '../redux/action/pizzas';
 
 
 
-const categoryNames = ['Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые'];
+const categoryNames = ['Meat', 'Vegetarian', 'Grilled', 'Spicy', 'Closed'];
 const sortItems = [
-    { name: 'популярности', type: 'popular', order: 'desc' },
-    { name: 'цене', type: 'price', order: 'desc' },
-    { name: 'алфавит', type: 'name', order: 'asc' },
+    { name: 'popularity', type: 'popular', order: 'desc' },
+    { name: 'price', type: 'price', order: 'desc' },
+    { name: 'alphabet', type: 'name', order: 'asc' },
 ];
 function Home() {
     const dispatch = useDispatch();
@@ -48,7 +48,7 @@ function Home() {
                     onClickSortType={onSelectSortType}
                 />
             </div>
-            <h2 className="content__title">Все пиццы</h2>
+            <h2 className="content__title">All pizzas</h2>
             <div className="content__items">
                 {isLoaded
                     ? items.map((obj) => (
