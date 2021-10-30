@@ -5,7 +5,7 @@ import Button from "../Button";
 
 
 
-function Index({ id, name, imageUrl, price, types, sizes, onClickAddPizza, addedCount }) {
+function PizzaBlock({ id, name, imageUrl, price, types, sizes, onClickAddPizza, addedCount }) {
 
     const availableTypes = ['тонкое', 'традиционное'];
     const availableSizes = [26, 30, 40];
@@ -63,13 +63,13 @@ function Index({ id, name, imageUrl, price, types, sizes, onClickAddPizza, added
                                 active: activeSize === index,
                                 disabled: !sizes.includes(size),
                             })}>
-                            {size} сm.
+                            {size} см.
                         </li>
                     ))}
                 </ul>
             </div>
             <div className="pizza-block__bottom">
-                <div className="pizza-block__price">{price}</div>
+                <div className="pizza-block__price">от {price} ₽</div>
                 <Button onClick={onAddPizza} className="button--add" outline>
                     <svg
                         width="12"
@@ -91,7 +91,7 @@ function Index({ id, name, imageUrl, price, types, sizes, onClickAddPizza, added
     );
 }
 
-Index.propTypes = {
+PizzaBlock.propTypes = {
     name: PropTypes.string,
     imageUrl: PropTypes.string,
     price: PropTypes.number,
@@ -101,7 +101,7 @@ Index.propTypes = {
     addedCount: PropTypes.number,
 };
 
-Index.defaultProps = {
+PizzaBlock.defaultProps = {
     name: '---',
     price: 0,
     types: [],
@@ -110,4 +110,4 @@ Index.defaultProps = {
 
 
 
-export default Index;
+export default PizzaBlock;
